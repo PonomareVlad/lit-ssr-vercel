@@ -1,8 +1,9 @@
 {
   "name": "lit-ssr-vercel",
   "dependencies": {
-    "@lit-labs/ssr": "^2.1.0",
-    "lit": "^2.2.3"
+    "lit": "npm:@svalit/lit@latest",
+    "@lit-labs/ssr": "npm:@svalit/ssr@latest",
+    "@lit-labs/ssr-client": "npm:@svalit/ssr-client@latest"
   },
   "scripts": {
     "vercel": "vercel dev"
