@@ -1,4 +1,5 @@
-import {LitElement, html} from "lit";
+import {LitElement, html} from "lit"
+import {styleMap} from 'lit/directives/style-map.js'
 
 export class MyComponent extends LitElement {
     static get properties() {
@@ -9,17 +10,17 @@ export class MyComponent extends LitElement {
     }
 
     firstUpdated() {
-        this.url = location.href.replace(location.origin, '');
-        this.hydrated = true;
+        this.url = location.href.replace(location.origin, '')
+        this.hydrated = true
     }
 
     hydrationStatus() {
-        return this.hydrated ? html`<span style="color: greenyellow">Hydrated</span>` : html`
-            <slot></slot>`
+        const styles = styleMap({color: this.hydrated ? 'greenyellow' : 'gold'})
+        return html`<span style="${styles}">${this.hydrated ? 'Hydrated' : 'Not hydrated'}</span>`
     }
 
     render() {
-        return html`Path: ${this.url} (${this.hydrationStatus()})`;
+        return html`Path: ${this.url} (${this.hydrationStatus()})`
     }
 }
 

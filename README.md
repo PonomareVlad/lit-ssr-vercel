@@ -12,7 +12,7 @@ npm i -g vercel
 vercel dev
 ```
 
-### Now you can make some changes in `components/my-component.mjs`
+Now you can make some changes in [components/my-component.mjs](components/my-component.mjs)
 
 ---
 
