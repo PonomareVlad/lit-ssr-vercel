@@ -4,6 +4,12 @@
 
 [Live demo](https://lit-ssr-template.vercel.app)
 
+### Variants
+
+- [With async component](https://github.com/PonomareVlad/lit-ssr-vercel/tree/async)
+- [With async component that fetch data at server-side](https://github.com/PonomareVlad/lit-ssr-vercel/tree/async-preload)
+- [With isomorphic async component based on custom build of Lit](https://github.com/PonomareVlad/lit-ssr-vercel/tree/async-pause)
+
 ### Run locally
 
 Install Vercel CLI
