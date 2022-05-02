@@ -1,5 +1,6 @@
 import {LitElement, html} from "lit"
 import {styleMap} from 'lit/directives/style-map.js'
+import './async-component.mjs'
 
 export class MyComponent extends LitElement {
     static get properties() {
@@ -20,7 +21,8 @@ export class MyComponent extends LitElement {
     }
 
     render() {
-        return html`Path: ${this.url} (${this.hydrationStatus()})`
+        return html`<p>Path: ${this.url} (${this.hydrationStatus()})</p>
+        <async-component></async-component>`
     }
 }
 
