@@ -1,6 +1,7 @@
 import {render} from "@lit-labs/ssr/lib/render-with-global-dom-shim.js"
 import {readFileSync} from 'fs'
 import {html} from "lit"
+import {fetchIP} from '../utils/ip.mjs'
 
 import '../components/my-component.mjs'
 
@@ -15,6 +16,7 @@ const template = ({url}) => html`
 
 export default async (req, res) => {
     res.write(`<!doctype html><html lang="en"><head>${head}${importMap}</head><body>`)
+    await fetchIP();
     for await (const chunk of render(template(req))) res.write(chunk)
     res.end(`${footer}</body></html>`)
 }
