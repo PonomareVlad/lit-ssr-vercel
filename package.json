@@ -7,5 +7,24 @@
   },
   "scripts": {
     "vercel": "vercel dev"
-  }
+  },
+  "description": "Lit SSR Template for Vercel",
+  "version": "1.0.0",
+  "main": "api/index.mjs",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PonomareVlad/lit-ssr-vercel.git"
+  },
+  "keywords": [
+    "lit",
+    "ssr",
+    "vercel"
+  ],
+  "author": "PonomareVlad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PonomareVlad/lit-ssr-vercel/issues"
+  },
+  "homepage": "https://github.com/PonomareVlad/lit-ssr-vercel#readme"
 }
