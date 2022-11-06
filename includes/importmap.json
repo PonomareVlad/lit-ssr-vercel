@@ -1,13 +1,13 @@
 {
   "imports": {
-    "lit": "https://cdn.jsdelivr.net/npm/@svalit/lit",
-    "lit/": "https://cdn.jsdelivr.net/npm/@svalit/lit/",
-    "lit-html": "https://cdn.jsdelivr.net/npm/@svalit/lit-html",
-    "lit-html/": "https://cdn.jsdelivr.net/npm/@svalit/lit-html/",
-    "lit-element/": "https://cdn.jsdelivr.net/npm/@svalit/lit-element/",
-    "@lit-labs/ssr-client/": "https://cdn.jsdelivr.net/npm/@svalit/ssr-client/",
-    "@lit/reactive-element/": "https://cdn.jsdelivr.net/npm/@svalit/reactive-element/",
-    "@lit/reactive-element": "https://cdn.jsdelivr.net/npm/@svalit/reactive-element/reactive-element.js",
+    "lit": "https://cdn.jsdelivr.net/npm/@lit-async/lit",
+    "lit/": "https://cdn.jsdelivr.net/npm/@lit-async/lit/",
+    "lit-html": "https://cdn.jsdelivr.net/npm/@lit-async/lit-html",
+    "lit-html/": "https://cdn.jsdelivr.net/npm/@lit-async/lit-html/",
+    "lit-element/": "https://cdn.jsdelivr.net/npm/@lit-async/lit-element/",
+    "@lit-labs/ssr-client/": "https://cdn.jsdelivr.net/npm/@lit-async/ssr-client/",
+    "@lit/reactive-element/": "https://cdn.jsdelivr.net/npm/@lit-async/reactive-element/",
+    "@lit/reactive-element": "https://cdn.jsdelivr.net/npm/@lit-async/reactive-element/reactive-element.js",
     "@webcomponents/template-shadowroot/": "https://cdn.skypack.dev/@webcomponents/template-shadowroot/"
   }
 }
