@@ -12,7 +12,7 @@ export class AsyncComponent extends LitElement {
 
     render() {
         const ip = isServer || this.hasUpdated ? serverUntil(this.fetchIP(), 'Loading...') : noChange
-        return html`<span style="color: gray">Worker IP:</span> ${ip}`
+        return html`<span style="color: gray">Worker IP:</span> <span>${ip}</span>`
     }
 }
 
