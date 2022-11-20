@@ -1,6 +1,6 @@
 import {LitElement, html} from "lit"
 import {styleMap} from 'lit/directives/style-map.js'
-import './async-component.mjs'
+import {serverUntil} from "@lit-labs/ssr-client/directives/server-until.js";
 
 export class MyComponent extends LitElement {
     static get properties() {
@@ -13,6 +13,7 @@ export class MyComponent extends LitElement {
     firstUpdated() {
         this.url = location.href.replace(location.origin, '')
         this.hydrated = true
+        this.scheduleUpdate()
     }
 
     hydrationStatus() {
@@ -22,7 +23,10 @@ export class MyComponent extends LitElement {
 
     render() {
         return html`<p>Path: ${this.url} (${this.hydrationStatus()})</p>
-        <async-component></async-component>`
+        <div>
+            ${serverUntil(import('./async-component.mjs').then(() => html`
+                <async-component></async-component>`), 'Loading...')}
+        </div>`
     }
 }
 

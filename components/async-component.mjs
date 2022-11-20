@@ -1,22 +1,26 @@
-import {LitElement, html} from "lit"
+import {LitElement, html, nothing, isServer} from "lit"
 import {serverUntil} from "@lit-labs/ssr-client/directives/server-until.js";
 
 export class AsyncComponent extends LitElement {
     static get properties() {
-        return {ip: {state: true}, isClient: {state: true}}
+        return {hydrated: {state: true}, ip: {state: true}}
     }
 
-    async fetchIP() {
-        return this.ip || (this.ip = await fetch('https://api.ipify.org?format=json').then(r => r.json()).then(({ip}) => ip))
+    async fetchIP(apiURL = 'https://api.ipify.org?format=json') {
+        const response = await fetch(apiURL)
+        const {ip} = await response.json()
+        return this.ip = ip
     }
 
-    firstUpdated(_changedProperties) {
-        this.isClient = true
+    firstUpdated() {
+        requestAnimationFrame(() => this.hydrated = true)
     }
 
     render() {
-        return html`<span style="color: gray">Worker IP:</span> ${serverUntil(this.fetchIP())}
-        <span style="color: coral">${this.isClient && !this.ip ? 'Updating...' : ''}</span>`
+        const ip = this.ip || ((isServer || this.hydrated) ? serverUntil(this.fetchIP()) : nothing)
+        const updating = this.hydrated && !this.ip ? 'Updating...' : nothing
+        return html`<span style="color: gray">Worker IP:</span> ${ip}
+        <span style="color: coral">${updating}</span>`
     }
 }
 

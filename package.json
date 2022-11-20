@@ -1,37 +1,54 @@
 {
   "name": "lit-ssr-vercel",
-  "dependencies": {
-    "@lit-labs/ssr": "npm:@lit-async/ssr@^2.2.5"
-  },
-  "overrides": {
-    "lit": "npm:@lit-async/lit@^2.4.3",
-    "lit-html": "npm:@lit-async/lit-html@^2.4.1",
-    "@lit-labs/ssr": "npm:@lit-async/ssr@^2.2.5",
-    "@lit-labs/task": "npm:@lit-async/task@^2.0.2",
-    "lit-element": "npm:@lit-async/lit-element@^3.2.4",
-    "@lit-labs/ssr-client": "npm:@lit-async/ssr-client@^1.0.3",
-    "@lit/reactive-element": "npm:@lit-async/reactive-element@^1.4.3"
-  },
-  "scripts": {
-    "vercel": "vercel dev"
-  },
   "description": "Lit SSR Template for Vercel",
   "version": "1.0.0",
-  "main": "api/index.mjs",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PonomareVlad/lit-ssr-vercel.git"
+  "license": "MIT",
+  "scripts": {
+    "vercel": "vc dev"
   },
+  "main": "api/index.mjs",
+  "author": "PonomareVlad",
   "keywords": [
     "lit",
     "ssr",
     "vercel"
   ],
-  "author": "PonomareVlad",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PonomareVlad/lit-ssr-vercel.git"
+  },
   "bugs": {
     "url": "https://github.com/PonomareVlad/lit-ssr-vercel/issues"
   },
-  "homepage": "https://github.com/PonomareVlad/lit-ssr-vercel#readme"
+  "homepage": "https://github.com/PonomareVlad/lit-ssr-vercel#readme",
+  "dependencies": {
+    "lit": "npm:@lit-async/lit@^2.4.1-mirror.1",
+    "@lit-labs/ssr": "npm:@lit-async/ssr@^2.2.3-mirror.1"
+  },
+  "peerDependencies": {
+    "vercel": "latest"
+  },
+  "peerDependenciesMeta": {
+    "vercel": {
+      "optional": true
+    }
+  },
+  "overrides": {
+    "lit": "npm:@lit-async/lit@^2.4.1-mirror.1",
+    "lit-html": "npm:@lit-async/lit-html@^2.4.0-mirror.1",
+    "@lit-labs/ssr": "npm:@lit-async/ssr@^2.2.3-mirror.1",
+    "@lit-labs/task": "npm:@lit-async/task@^2.0.0-mirror.1",
+    "lit-element": "npm:@lit-async/lit-element@^3.2.2-mirror.4",
+    "@lit-labs/ssr-client": "npm:@lit-async/ssr-client@^1.0.1-mirror.1",
+    "@lit/reactive-element": "npm:@lit-async/reactive-element@^1.4.2-mirror.1"
+  },
+  "resolutions": {
+    "lit": "npm:@lit-async/lit@^2.4.1-mirror.1",
+    "lit-html": "npm:@lit-async/lit-html@^2.4.0-mirror.1",
+    "@lit-labs/ssr": "npm:@lit-async/ssr@^2.2.3-mirror.1",
+    "@lit-labs/task": "npm:@lit-async/task@^2.0.0-mirror.1",
+    "lit-element": "npm:@lit-async/lit-element@^3.2.2-mirror.4",
+    "@lit-labs/ssr-client": "npm:@lit-async/ssr-client@^1.0.1-mirror.1",
+    "@lit/reactive-element": "npm:@lit-async/reactive-element@^1.4.2-mirror.1"
+  }
 }
