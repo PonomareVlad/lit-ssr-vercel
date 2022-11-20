@@ -8,7 +8,7 @@
 
 - [With async component](https://github.com/PonomareVlad/lit-ssr-vercel/tree/async)
 - [With async component that fetch data at server-side](https://github.com/PonomareVlad/lit-ssr-vercel/tree/async-preload)
-- [With isomorphic async component based on custom build of Lit](https://github.com/PonomareVlad/lit-ssr-vercel/tree/async-pause)
+- [With true isomorphic async component that can fetch and hydrate async data](https://github.com/PonomareVlad/lit-ssr-vercel/tree/async-hydration) 🔥
 
 ### Run locally
 
