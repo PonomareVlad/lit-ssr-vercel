@@ -1,11 +1,12 @@
 ## Lit SSR Template for Vercel
 
-With isomorphic [async component](components/async-component.mjs) based
-on [custom build](https://github.com/SvaLit/lit-async-ssr/tree/svalit) of Lit
+With [async component](components/async-component.mjs) based
+on [fork](https://github.com/PonomareVlad/lit/tree/lit-async) of Lit, that provides ability for true isomorphic async
+rendering and hydration
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FPonomareVlad%2Flit-ssr-vercel%2Ftree%2Fasync-pause&project-name=lit-ssr&repo-name=lit-ssr-vercel)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FPonomareVlad%2Flit-ssr-vercel%2Ftree%2Fasync-hydration&project-name=lit-ssr&repo-name=lit-ssr-vercel)
 
-[Live demo](https://lit-ssr-async-pause-template.vercel.app)
+[Live demo](https://lit-ssr-async-hydration-template.vercel.app)
 
 ### Run locally
 
