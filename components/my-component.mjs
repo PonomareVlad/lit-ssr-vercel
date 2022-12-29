@@ -24,4 +24,6 @@ export class MyComponent extends LitElement {
     }
 }
 
+const {customElements} = globalThis;
+
 customElements.define('my-component', MyComponent);
