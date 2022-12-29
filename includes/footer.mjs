@@ -1,3 +1,4 @@
+export default `
 <script defer type="module">
     import 'lit/experimental-hydrate-support.js'
     import {hydrateShadowRoots} from '@webcomponents/template-shadowroot/template-shadowroot.js'
@@ -8,3 +9,4 @@
 
     import('/components/my-component.mjs')
 </script>
+`

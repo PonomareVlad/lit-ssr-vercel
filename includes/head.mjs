@@ -1,3 +1,4 @@
+export default `
 <meta charset="UTF-8">
 <title>LitSSR Hydration Demo</title>
 <meta content="dark light" name="color-scheme">
@@ -8,3 +9,4 @@
         font-family: Helvetica, sans-serif;
     }
 </style>
+`

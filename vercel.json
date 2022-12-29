@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "api/*": {
-      "includeFiles": "includes/*"
-    }
-  },
   "rewrites": [
     {
       "source": "(.*)",

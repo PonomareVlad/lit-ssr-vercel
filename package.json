@@ -1,16 +1,24 @@
 {
   "name": "lit-ssr-vercel",
-  "dependencies": {
-    "@lit-labs/ssr": "^2.3.0",
-    "lit": "^2.5.0"
-  },
-  "scripts": {
-    "vercel": "vercel dev"
-  },
   "description": "Lit SSR Template for Vercel",
   "version": "1.0.0",
   "main": "api/index.mjs",
-  "devDependencies": {},
+  "scripts": {
+    "vercel": "vercel dev"
+  },
+  "dependencies": {
+    "@lit-labs/ssr": "^2.3.0",
+    "@svalit/dom-shim-edge": "^1.0.0",
+    "lit": "^2.5.0"
+  },
+  "peerDependencies": {
+    "vercel": "latest"
+  },
+  "peerDependenciesMeta": {
+    "vercel": {
+      "optional": true
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PonomareVlad/lit-ssr-vercel.git"
