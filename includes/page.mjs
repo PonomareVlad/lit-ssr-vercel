@@ -14,7 +14,7 @@ export const page = {
 
 export default function (templateResult, {before, after, headers} = page) {
     const encoder = new TextEncoder();
-    const iterable = render(templateResult);
+    const iterable = withAsync(render(templateResult));
     const readable = new ReadableStream({
         start(controller) {
             controller.enqueue(encoder.encode(before));
@@ -29,4 +29,15 @@ export default function (templateResult, {before, after, headers} = page) {
         },
     });
     return new Response(readable, {headers});
+}
+
+async function* withAsync(iterable) {
+    for (const value of iterable) {
+        if (typeof value?.then === 'function') {
+            yield* withAsync(await value);
+        }
+        else {
+            yield value;
+        }
+    }
 }
