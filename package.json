@@ -7,7 +7,7 @@
     "vercel": "vercel dev"
   },
   "dependencies": {
-    "@lit-labs/ssr": "npm:@svalit/ssr@worker",
+    "@lit-labs/ssr": "npm:@svalit/ssr@async-worker",
     "@svalit/dom-shim-edge": "^1.0.1",
     "lit": "^2.5.0"
   },
@@ -20,14 +20,18 @@
     }
   },
   "overrides": {
-    "lit-html": "npm:@svalit/lit-html@worker",
-    "@lit-labs/ssr": "npm:@svalit/ssr@worker",
-    "@lit/reactive-element": "npm:@svalit/reactive-element@worker"
+    "lit-html": "npm:@svalit/lit-html@async-worker",
+    "@lit-labs/ssr": "npm:@svalit/ssr@async-worker",
+    "lit-element": "npm:@svalit/lit-element@async-worker",
+    "@lit-labs/ssr-client": "npm:@svalit/ssr-client@async-worker",
+    "@lit/reactive-element": "npm:@svalit/reactive-element@async-worker"
   },
   "resolutions": {
-    "lit-html": "npm:@svalit/lit-html@worker",
-    "@lit-labs/ssr": "npm:@svalit/ssr@worker",
-    "@lit/reactive-element": "npm:@svalit/reactive-element@worker"
+    "lit-html": "npm:@svalit/lit-html@async-worker",
+    "@lit-labs/ssr": "npm:@svalit/ssr@async-worker",
+    "lit-element": "npm:@svalit/lit-element@async-worker",
+    "@lit-labs/ssr-client": "npm:@svalit/ssr-client@async-worker",
+    "@lit/reactive-element": "npm:@svalit/reactive-element@async-worker"
   },
   "repository": {
     "type": "git",
