@@ -13,6 +13,7 @@ export const page = {
 }
 
 export default function (templateResult, {before, after, headers} = page) {
+    const time = Date.now();
     const encoder = new TextEncoder();
     const iterable = withAsync(render(templateResult));
     const readable = new ReadableStream({
@@ -23,6 +24,9 @@ export default function (templateResult, {before, after, headers} = page) {
             const {value, done} = await iterable.next();
             if (done) {
                 controller.enqueue(encoder.encode(after));
+                controller.enqueue(encoder.encode(
+                    `<script async>globalThis.calcLoadTime(${Date.now() - time})</script>`
+                ));
                 return controller.close();
             }
             controller.enqueue(encoder.encode(value));
@@ -35,8 +39,7 @@ async function* withAsync(iterable) {
     for (const value of iterable) {
         if (typeof value?.then === 'function') {
             yield* withAsync(await value);
-        }
-        else {
+        } else {
             yield value;
         }
     }

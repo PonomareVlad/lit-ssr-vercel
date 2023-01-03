@@ -1,4 +1,7 @@
 export default `
+<script async>
+    globalThis.time = Date.now();
+</script>
 <meta charset="UTF-8">
 <title>LitSSR Hydration Demo</title>
 <meta content="dark light" name="color-scheme">

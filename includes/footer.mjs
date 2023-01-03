@@ -9,4 +9,7 @@ export default `
 
     import('/components/my-component.mjs')
 </script>
+<script async>
+    globalThis.calcLoadTime = server => console.debug({client: Date.now() - globalThis.time, server});
+</script>
 `
