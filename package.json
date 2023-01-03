@@ -7,7 +7,7 @@
     "vercel": "vercel dev"
   },
   "dependencies": {
-    "@lit-labs/ssr": "npm:@worklit/ssr@2.3.0-worklit.2",
+    "@lit-labs/ssr": "npm:@svalit/ssr@worker",
     "@svalit/dom-shim-edge": "^1.0.1",
     "lit": "^2.5.0"
   },
@@ -20,14 +20,14 @@
     }
   },
   "overrides": {
-    "lit-html": "npm:@worklit/lit-html@2.5.0-worklit.4",
-    "@lit-labs/ssr": "npm:@worklit/ssr@2.3.0-worklit.2",
-    "@lit/reactive-element": "npm:@worklit/reactive-element@1.5.0-worklit.3"
+    "lit-html": "npm:@svalit/lit-html@worker",
+    "@lit-labs/ssr": "npm:@svalit/ssr@worker",
+    "@lit/reactive-element": "npm:@svalit/reactive-element@worker"
   },
   "resolutions": {
-    "lit-html": "npm:@worklit/lit-html@2.5.0-worklit.4",
-    "@lit-labs/ssr": "npm:@worklit/ssr@2.3.0-worklit.2",
-    "@lit/reactive-element": "npm:@worklit/reactive-element@1.5.0-worklit.3"
+    "lit-html": "npm:@svalit/lit-html@worker",
+    "@lit-labs/ssr": "npm:@svalit/ssr@worker",
+    "@lit/reactive-element": "npm:@svalit/reactive-element@worker"
   },
   "repository": {
     "type": "git",
