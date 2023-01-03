@@ -16,4 +16,6 @@ export class AsyncComponent extends LitElement {
     }
 }
 
+const {customElements} = globalThis;
+
 customElements.define('async-component', AsyncComponent)
