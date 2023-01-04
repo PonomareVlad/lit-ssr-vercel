@@ -1,10 +1,12 @@
 ## Lit SSR Template for Vercel
 
-With rendering in a Vercel Edge Runtime (worker) that supports streaming responses
+With [async component](components/async-component.mjs) based
+on [fork](https://github.com/PonomareVlad/lit/tree/lit-async) of Lit, that provides ability for async
+rendering in a Vercel Edge Runtime (worker)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FPonomareVlad%2Flit-ssr-vercel%2Ftree%2Fedge&project-name=lit-ssr&repo-name=lit-ssr-vercel)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FPonomareVlad%2Flit-ssr-vercel%2Ftree%2Fasync-edge&project-name=lit-ssr&repo-name=lit-ssr-vercel)
 
-[Live demo](https://lit-ssr-edge-template.vercel.app)
+[Live demo](https://lit-ssr-async-edge-template.vercel.app)
 
 ### Run locally
 
