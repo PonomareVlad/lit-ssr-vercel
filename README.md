@@ -10,6 +10,7 @@
 - [With async component](https://github.com/PonomareVlad/lit-ssr-vercel/tree/async)
 - [With async component that fetch data at server-side](https://github.com/PonomareVlad/lit-ssr-vercel/tree/async-preload)
 - [With true isomorphic async component that can hydrate async data](https://github.com/PonomareVlad/lit-ssr-vercel/tree/async-hydration) 🔥
+- [With true isomorphic async component in Edge Runtime](https://github.com/PonomareVlad/lit-ssr-vercel/tree/async-edge) 🔥
 
 ### Run locally
 
