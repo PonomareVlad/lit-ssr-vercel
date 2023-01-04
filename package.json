@@ -7,9 +7,10 @@
     "vercel": "vercel dev"
   },
   "dependencies": {
-    "@lit-labs/ssr": "npm:@svalit/ssr@worker",
+    "lit": "^2.5.0",
+    "@svalit/edge": "^0.0.2",
     "@svalit/dom-shim-edge": "^1.0.1",
-    "lit": "^2.5.0"
+    "@lit-labs/ssr": "npm:@svalit/ssr@worker"
   },
   "peerDependencies": {
     "vercel": "latest"

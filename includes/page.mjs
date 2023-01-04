@@ -1,4 +1,5 @@
 import {render} from "@lit-labs/ssr/lib/render-lit-html.js";
+import {iteratorToStream} from "@svalit/edge";
 
 import head from '../includes/head.mjs';
 import footer from '../includes/footer.mjs';
@@ -13,20 +14,7 @@ export const page = {
 }
 
 export default function (templateResult, {before, after, headers} = page) {
-    const encoder = new TextEncoder();
-    const iterable = render(templateResult);
-    const readable = new ReadableStream({
-        start(controller) {
-            controller.enqueue(encoder.encode(before));
-        },
-        async pull(controller) {
-            const {value, done} = await iterable.next();
-            if (done) {
-                controller.enqueue(encoder.encode(after));
-                return controller.close();
-            }
-            controller.enqueue(encoder.encode(value));
-        },
-    });
+    const iterator = render(templateResult);
+    const readable = iteratorToStream(iterator, {before, after});
     return new Response(readable, {headers});
 }
