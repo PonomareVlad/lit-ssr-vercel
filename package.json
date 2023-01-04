@@ -7,6 +7,7 @@
     "vercel": "vercel dev"
   },
   "dependencies": {
+    "@svalit/edge": "^0.0.2",
     "@svalit/dom-shim-edge": "^1.0.1",
     "lit": "npm:@svalit/lit@async-worker",
     "@lit-labs/ssr": "npm:@svalit/ssr@async-worker",

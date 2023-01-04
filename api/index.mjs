@@ -4,13 +4,15 @@ import {html} from "lit";
 
 import '../components/my-component.mjs';
 
-const getUrlPath = url => {
-    const location = new URL(url);
-    return location.href.replace(location.origin, '')
+const getUrlPath = (url = 'http://localhost/') => {
+    const {href, origin} = new URL(url);
+    return href.replace(origin, '');
 }
 
-const template = ({url}) => html`
-    <my-component url="${getUrlPath(url)}"><span style="color: coral">Not rendered</span></my-component>`
+const template = ({url} = {}) => html`
+    <my-component url="${getUrlPath(url)}">
+        <span style="color: coral">Not rendered</span>
+    </my-component>`
 
 export default req => render(template(req));
 
