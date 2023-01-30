@@ -2,7 +2,7 @@
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FPonomareVlad%2Flit-ssr-vercel%2Ftree%2Fstatic&project-name=lit-ssr&repo-name=lit-ssr-vercel)
 
-[Live demo](https://lit-ssr-template.vercel.app)
+[Live demo](https://lit-ssr-vercel-git-static-ponomarevlad.vercel.app)
 
 ### Variants
 
