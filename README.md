@@ -30,4 +30,4 @@ Now you can make some changes in [components/my-component.mjs](components/my-com
 - [includes/page.mjs](includes/page.mjs) — Page template renderer
 - [includes/head.mjs](includes/head.mjs) — Inner `<head>` content
 - [includes/footer.mjs](includes/footer.mjs) — Before `</body>` content
-- [includes/importmap.mjs](includes/importmap.mjs) — Import map for builder-less modules
+- [includes/importmap.json](includes/importmap.json) — Import map for builder-less modules
