@@ -1,9 +1,9 @@
 import {render} from "@lit-labs/ssr/lib/render-lit-html.js";
+import importMap from "../includes/importmap.json";
 import {iteratorToStream} from "@svalit/edge";
 
 import head from '../includes/head.mjs';
 import footer from '../includes/footer.mjs';
-import importMap from '../includes/importmap.mjs';
 
 const importMapTag = `<script type="importmap">${JSON.stringify(importMap, null, 4)}</script>`
 

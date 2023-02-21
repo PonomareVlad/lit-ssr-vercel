@@ -1,4 +1,4 @@
-export default {
+{
   "imports": {
     "lit": "https://cdn.jsdelivr.net/npm/lit",
     "lit/": "https://cdn.jsdelivr.net/npm/lit/",
