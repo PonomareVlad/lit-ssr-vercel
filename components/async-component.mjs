@@ -7,7 +7,7 @@ export class AsyncComponent extends LitElement {
     }
 
     firstUpdated() {
-        this.scheduleUpdate();
+        this.requestUpdate();
     }
 
     render() {
