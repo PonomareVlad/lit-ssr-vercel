@@ -1,6 +1,6 @@
-import importMap from "../includes/importmap.json" assert {type: "json"};
 import {render} from "@lit-labs/ssr/lib/render-lit-html.js";
 import {withAsync, iteratorToStream} from "@svalit/edge";
+import importMap from "../includes/importmap.json";
 
 import head from '../includes/head.mjs';
 import footer from '../includes/footer.mjs';

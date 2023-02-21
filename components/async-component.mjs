@@ -7,11 +7,11 @@ export class AsyncComponent extends LitElement {
     }
 
     firstUpdated() {
-        this.scheduleUpdate();
+        this.requestUpdate();
     }
 
     render() {
-        const ip = isServer || this.hasUpdated ? serverUntil(this.fetchIP(), 'Loading...') : noChange
+        const ip = (isServer || this.hasUpdated) ? serverUntil(this.fetchIP(), 'Loading...') : noChange
         return html`<span style="color: gray">Worker IP:</span> <span>${ip}</span>`
     }
 }
