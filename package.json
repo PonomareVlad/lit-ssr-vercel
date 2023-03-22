@@ -1,7 +1,7 @@
 {
   "name": "lit-ssr-vercel",
   "dependencies": {
-    "@lit-labs/ssr": "^3.0.1",
+    "@lit-labs/ssr": "^3.1.0",
     "lit": "^2.6.1"
   },
   "scripts": {
