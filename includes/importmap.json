@@ -6,8 +6,9 @@
     "lit-html/": "https://cdn.jsdelivr.net/npm/lit-html/",
     "lit-element/": "https://cdn.jsdelivr.net/npm/lit-element/",
     "@lit-labs/ssr-client/": "https://cdn.jsdelivr.net/npm/@lit-labs/ssr-client/",
-    "@lit-labs/ssr-dom-shim": "https://cdn.jsdelivr.net/npm/@lit-labs/ssr-dom-shim",
     "@lit/reactive-element/": "https://cdn.jsdelivr.net/npm/@lit/reactive-element/",
+    "@lit-labs/ssr-dom-shim/": "https://cdn.jsdelivr.net/npm/@lit-labs/ssr-dom-shim/",
+    "@lit-labs/ssr-dom-shim": "https://cdn.jsdelivr.net/npm/@lit-labs/ssr-dom-shim/index.js",
     "@lit/reactive-element": "https://cdn.jsdelivr.net/npm/@lit/reactive-element/reactive-element.js",
     "@webcomponents/template-shadowroot/": "https://cdn.skypack.dev/@webcomponents/template-shadowroot/"
   }
